@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left,rgb(29,         29,85),black);
+    background-size: cover;
+    height: auto;
+}
+
+h1{
+    color: rgba(226, 226, 226, 0.7);
+}
+
+.slot-container {
+    background-color: rgb(18, 18, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 5px;
+    border-radius: 16px;
+    border: 3px solid #ff5b2a;
+    box-shadow: 0 0 5px #FFC300;
+    animation: blink 0.2s infinite alternate;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .slot {
+    
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-size: cover;
+    box-sizing: border-box; 
+    border-radius: 8px;
+  }
+  .winning-square {
+   
+    box-sizing: border-box; 
+    border: 10px solid #ff5b2a;
+    box-shadow: 0 0 5px #FFC300;
+    animation: blink 0.2s infinite alternate; 
+    }
+
+  
+
+  #spin-btn{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: linear-gradient(orange,red,orange);    
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: black;
+  }
+  #spin-btn:hover{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(255, 176, 31),rgb(255, 60, 60),rgb(255, 190, 70));    
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: black;
+  }
+  #spin-btn:active{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(168, 109, 0),rgb(141, 6, 6),rgb(158, 103, 0));    
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: black;
+  }
+
+  @keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: #FFC300; } 
+}
